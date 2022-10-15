@@ -1,0 +1,20 @@
+.code__container {
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: calculateRem(24px);
+}
+
+.react-code-input {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
+}
+

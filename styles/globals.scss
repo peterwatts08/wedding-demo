@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=block');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=block');
+
+//Bootstrap variable changes
+$font-family-sans-serif: 'Amatic SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@import '~bootstrap/scss/bootstrap';
+@import '~ag-grid-community/dist/styles/ag-grid.css';
+@import '~ag-grid-community/dist/styles/ag-theme-alpine.css';
+
+body {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  min-width: 300px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  @media (max-width: 576px) {
+    background-size: 100vh;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.table__container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+#background-div {
+  background: rgb(255,255,255,0.7);
+  min-height: 100vh;
+}
+
+#root-div {
+  background: url(/images/background2.jpg);
+  background-size: cover;
+  background-blend-mode: lighten;
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+}
+
+@import './index';
+@import './content';
+@import './form';
+@import './calendar-button';
+@import './code';
+@import './invite';
+@import './location';
+@import './footer';

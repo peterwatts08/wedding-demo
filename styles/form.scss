@@ -1,0 +1,28 @@
+.form__container {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: calculateRem(24px);
+	@media (max-width: 576px) {
+		font-size: calculateRem(20px);
+	}
+}
+
+.form__label {
+	font-size: calculateRem(20px);
+	@media (max-width: 576px) {
+		font-size: calculateRem(16px);
+	}
+}
+
+.form__message {
+	border-radius: calculateRem(6px);
+	border: #D1D1D1 1px solid;
+	text-align: center;
+}
+
+.form__reset {
+	cursor: pointer;
+	font-size: calculateRem(14px);
+	&:hover {
+		text-decoration: underline;
+	}
+}

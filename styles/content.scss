@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.content__barn-image {
+	border-radius: calculateRem(12px);
+}
+
+.content__90-width {
+	width: 90%;
+	@media (max-width: 576px) {
+		width: 100%;
+	}
+}
+
+.content__container {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.content-tile__container {
+	border-radius: 8px;
+	border: 2px lighten(#D1D1D1, 10%) solid;
+	font-size: calculateRem(22px);
+	@media (max-width: 992px) {
+		font-size: calculateRem(18px);
+	}
+}
+
+.content__heading {
+	font-size: calculateRem(20px);
+	text-align: right;
+	@media (max-width: 992px) {
+		text-align: center;
+		font-size: calculateRem(16px);
+	}
+}
+
+.content__bold-heading {
+	font-size: calculateRem(24px);
+	font-weight: 700;
+	@media (max-width: 576px) {
+		font-size: calculateRem(20px);
+	}
+	@media (max-width: 992px) {
+		text-align: center;
+	}
+}
+
+.content__fancy-heading {
+	font-family: 'Sacramento', cursive;
+	font-size: calculateRem(48px);
+	@media (max-width: 992px) {
+		font-size: calculateRem(36px);
+		text-align: center;
+	}
+}
+
+.content__table-text {
+	font-size: calculateRem(28px);
+	text-align: center;
+	@media (max-width: 576px) {
+		font-size: calculateRem(20px);
+	}
+}	
+
+.content__table-text--bold {
+	@extend .content__table-text;
+	font-size: calculateRem(22px);
+	font-weight: 700;
+	@media (max-width: 576px) {
+		font-size: calculateRem(16px);
+	}
+}	
+
+.content__list {
+	font-size: calculateRem(22px);
+	@media (max-width: 576px) {
+		font-size: calculateRem(16px);
+	}
+}
+
+.content__link {
+	color: darken(#D1D1D1, 40%);
+	text-decoration: none;
+	transition: 0.3s ease-in;
+	&:hover {
+		color: black;
+	}
+}
